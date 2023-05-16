@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -5,6 +11,64 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.grandparent {
+  display: grid;
+  gap: 2rem;
+  color: white;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* background-color: #61dafb; */
+  grid-auto-rows: 365px;
+  border-radius: 10px;
+
+  /* height: 100vh;
+  width: 100vw;*/
+}
+
+#inptxt {
+  color: black;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  resize: none;
+  outline: none;
+  width: 100%;
+  background-color: #189AB4;
+}
+
+#inptxt:focus {
+  /* border: none; */
+  resize: none;
+  outline: none;
+  /* border-bottom:0 ; */
+
+}
+
+.parent {
+  border: 1px solid black;
+  /* background-color: blue;  */
+  /* background-color: #D4F1F4; */
+  border-radius: 10px;
+  background-color: #189AB4;
+
+
+}
+
+.localparent {
+  border: 1px solid black;
+  background-color: #D4F1F4;
+  color: black;
+  border-radius: 10px;
+
+}
+
+.child {
+  background-color: yellowgreen;
+  border-radius: 10px;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -32,6 +96,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
